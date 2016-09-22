@@ -1,0 +1,31 @@
+/* =============================================================================
+   Grid
+   ========================================================================== */
+body{ 
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    line-height: 1.35;
+    font-weight: normal;
+    font-family: $baseFont;
+    color: $baseColour;
+}
+.container{
+    width: 100%;
+    &:before, &:after{
+    	content: "";
+    	display: table;
+    }
+    &:after{
+    	clear: both;
+    }
+}
+.col{
+     @for $i from 1 through 8 {
+        &.span-#{$i}-8 {
+            @include bp-large {
+                @include col($i, 8, 0, top);
+            }
+        }
+    }
+}

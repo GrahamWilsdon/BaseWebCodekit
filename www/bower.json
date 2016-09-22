@@ -1,0 +1,22 @@
+{
+  "name": "Start Project",
+  "authors": [
+    "Graham Wilsdon <grahamwilsdon@me.com>"
+  ],
+  "description": "Graham's starter project for front end builds",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "modernizer": "^2.8.2"
+  }
+}
